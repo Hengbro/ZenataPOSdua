@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/paddingNormal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/btn_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baseline_clear"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/btn_clear"
+                android:text="Nama product"
+                android:textStyle="bold"
+                android:layout_margin="@dimen/marginSmall"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/textBody2"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:padding="@dimen/paddingMedium"
+                android:layout_alignParentEnd="true"
+                app:cardCornerRadius="@dimen/_5sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_margin="@dimen/marginSmall"
+                android:backgroundTint="@color/purple_200"
+                app:cardElevation="@dimen/_4sdp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add product"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textBody1"
+                    android:textColor="@color/white"
+                    android:padding="@dimen/paddingSmall"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
